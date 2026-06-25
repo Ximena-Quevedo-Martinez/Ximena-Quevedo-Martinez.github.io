@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indy Autonomous Challenge — Ximena Quevedo</title>
+  <meta name="description" content="Longitudinal and lateral control for a fully autonomous Dallara AV-21 race car at the Indianapolis Motor Speedway, with the Black & Gold Autonomous Racing Team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="hero hero--detail">
+    <nav class="nav">
+      <a class="nav__logo" href="../index.html">XQ</a>
+      <ul class="nav__links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="detail-hero">
+      <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      <p class="hero__eyebrow">Autonomous Racing · Control</p>
+      <h1>Indy Autonomous Challenge</h1>
+      <p class="lead">
+        Designing and validating the vehicle control for a fully autonomous
+        Dallara AV-21 race car, from simulation to physical testing at the
+        Indianapolis Motor Speedway.
+      </p>
+      <ul class="detail-meta">
+        <li><strong>Role</strong> Control (longitudinal &amp; lateral)</li>
+        <li><strong>Team</strong> Black &amp; Gold Autonomous Racing, Indiana University</li>
+        <li><strong>Vehicle</strong> Dallara AV-21</li>
+        <li><strong>Venue</strong> Indianapolis Motor Speedway</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="board">
+    <!-- challenge + approach -->
+    <div class="board__row board__intro">
+      <div class="callout">
+        <h2>The challenge</h2>
+        <p>Make an autonomous Dallara AV-21 follow its planned racing line precisely and stably at high speed, where a small control error turns into meters of deviation, and where the controller has to behave the same in simulation and on the real track.</p>
+      </div>
+      <div class="callout callout--accent">
+        <h2>The approach</h2>
+        <p>Design the longitudinal and lateral control with PID and ADRC, tune it in MATLAB/Simulink, and prove every controller in simulation before it ever reaches the physical car.</p>
+      </div>
+    </div>
+
+    <!-- pipeline -->
+    <div class="board__row">
+      <div class="flow">
+        <div class="flow__step">
+          <span class="flow__num">1</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5H3"/><path d="M12 19H3"/><path d="M14 3v4"/><path d="M16 17v4"/><path d="M21 12h-9"/><path d="M21 19h-5"/><path d="M21 5h-7"/><path d="M8 10v4"/><path d="M8 12H3"/></svg></div>
+          <h3>Model &amp; tune</h3>
+          <p>PID and ADRC designed and tuned in MATLAB/Simulink</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">2</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 12.5 8 15l2 2.5"/><path d="m14 12.5 2 2.5-2 2.5"/></svg></div>
+          <h3>Implement</h3>
+          <p>Ported from Ansys SCADE to Python, behaviour kept consistent</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">3</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z"/><path d="M12 17v4"/><path d="M8 21h8"/><rect x="2" y="3" width="20" height="14" rx="2"/></svg></div>
+          <h3>Validate in sim</h3>
+          <p>Closed-loop runs in VRXperience and LGSVL before the real car</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">4</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"/></svg></div>
+          <h3>Run on track</h3>
+          <p>Exercised on the real AV-21 at the Indianapolis Motor Speedway</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- story + photo -->
+    <div class="board__row board__split">
+      <div class="callout">
+        <h2>From zero to hands-on</h2>
+        <p>My hardest fight was not control theory, it was the toolchain. I had no Linux, ROS or GitHub experience and my English was still weak. Getting <code>colcon build</code> to compile every package in the workspace meant teaching myself all of it from scratch, and I kept at it until the full workspace built and ran. That is the moment I went from theory to genuinely hands-on robotics engineering.</p>
+      </div>
+      <figure class="media-card">
+        <img src="../assets/img/indy_hero.jpg" alt="Ximena next to the Dallara AV-21 in the pit lane at the Indianapolis Motor Speedway" />
+        <figcaption>With the Dallara AV-21 in the pit lane at the Indianapolis Motor Speedway.</figcaption>
+      </figure>
+    </div>
+
+    <!-- result + stack -->
+    <div class="board__row board__result">
+      <span class="res-label">Result</span>
+      <p>A longitudinal and lateral control stack validated in simulation and exercised on the real Dallara AV-21 at the Indianapolis Motor Speedway, hands-on field testing at one of the most demanding autonomous-driving venues, and a co-authored technical paper. During my bachelor's, a 1:10 Jetson Nano model (ROS2, camera, encoders) prototyped the same PID control at small scale.</p>
+      <ul class="stack-chips">
+        <li>MATLAB/Simulink</li><li>Ansys SCADE</li><li>Python</li><li>ROS2</li>
+        <li>PID</li><li>ADRC</li><li>NVIDIA Jetson Nano</li><li>VRXperience</li><li>LGSVL</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ximena Quevedo · <a href="../index.html" style="color:rgba(255,255,255,0.85)">Back to home</a></p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

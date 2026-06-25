@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electric Go-Kart — Ximena Quevedo</title>
+  <meta name="description" content="A personal hands-on bachelor project: an electric go-kart driven by a 24 V DC motor and controlled by a PIC18F4550 microcontroller." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="hero hero--detail">
+    <nav class="nav">
+      <a class="nav__logo" href="../index.html">XQ</a>
+      <ul class="nav__links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="detail-hero">
+      <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      <p class="hero__eyebrow">Embedded · Bachelor</p>
+      <h1>Electric Go-Kart</h1>
+      <p class="lead">A personal hands-on bachelor project: an electric go-kart driven by a 24 V DC motor and controlled by a PIC18F4550 microcontroller.</p>
+      <ul class="detail-meta">
+        <li><strong>Role</strong> Personal project</li>
+        <li><strong>Domain</strong> Embedded · Power electronics</li>
+        <li><strong>Platform</strong> PIC18F4550</li>
+        <li><strong>Stack</strong> Embedded C</li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="board">
+    <div class="board__row board__intro">
+      <div class="callout">
+        <h2>The challenge</h2>
+        <p>Turn classroom theory into a vehicle that actually drives, built and wired by hand during my bachelor's.</p>
+      </div>
+      <div class="callout callout--accent">
+        <h2>The approach</h2>
+        <p>A 24 V DC-motor go-kart controlled by a PIC18F4550, with a graphic LCD for vehicle status and an ultrasonic sensor for obstacle detection.</p>
+      </div>
+    </div>
+
+    <div class="board__row">
+      <div class="flow">
+        <div class="flow__step">
+          <span class="flow__num">1</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 7-3 5h4l-3 5" /><path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935" /><path d="M22 14v-4" /><path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936" /></svg></div>
+          <h3>Power</h3>
+          <p>24 V DC motor and its power electronics</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">2</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v2" /><path d="M12 2v2" /><path d="M17 20v2" /><path d="M17 2v2" /><path d="M2 12h2" /><path d="M2 17h2" /><path d="M2 7h2" /><path d="M20 12h2" /><path d="M20 17h2" /><path d="M20 7h2" /><path d="M7 20v2" /><path d="M7 2v2" /><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="8" y="8" width="8" height="8" rx="1" /></svg></div>
+          <h3>Control</h3>
+          <p>PIC18F4550 microcontroller in embedded C</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">3</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg></div>
+          <h3>Status</h3>
+          <p>Graphic LCD showing the vehicle state</p>
+        </div>
+        <div class="flow__step">
+          <span class="flow__num">4</span>
+          <div class="flow__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 12h10" /></svg></div>
+          <h3>Sense</h3>
+          <p>Ultrasonic obstacle detection</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="board__row board__split">
+      <div class="callout">
+        <h2>Why it mattered</h2>
+        <p>The first time I turned theory into a working vehicle, end to end.</p>
+      </div>
+      <div class="callout callout--accent">
+        <h2>Hands-on scope</h2>
+        <p>Mechanics, power electronics, firmware and the HMI, all in one build.</p>
+      </div>
+    </div>
+
+    <div class="board__row board__result">
+      <span class="res-label">Result</span>
+      <p>A driveable electric go-kart I built end to end, from power electronics and microcontroller firmware to the LCD interface and obstacle sensing, and the project where I first became an engineer who builds working things.</p>
+      <ul class="stack-chips">
+        <li>PIC18F4550</li><li>Embedded C</li><li>Power electronics</li><li>24 V DC motor</li><li>Graphic LCD</li><li>Ultrasonic sensor</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ximena Quevedo · <a href="../index.html" style="color:rgba(255,255,255,0.85)">Back to home</a></p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
