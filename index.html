@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ximena Quevedo — Robotics & ADAS Engineer</title>
+  <meta name="description" content="Mechatronics engineer working on ADAS validation, autonomous systems and embedded software. Portfolio of projects in robotics, electric vehicles and autonomous racing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <span class="nav__logo">XQ</span>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Mechatronics · Robotics · ADAS</p>
+      <h1 class="hero__title">Ximena Quevedo</h1>
+      <p class="hero__subtitle">
+        Engineer bridging mechatronics, autonomous systems and ADAS validation.
+        From electric vehicles in Medellín to autonomous racing at the Indianapolis
+        Motor Speedway and Hardware-in-the-Loop testing of driver-assistance functions.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">View projects</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section__title">About</h2>
+      <div class="about">
+        <p>
+          I am a mechatronics engineer (B.Eng.) with a Master of Engineering in
+          Automated Driving and Vehicle Safety from Technische Hochschule
+          Ingolstadt. My work sits where software, electronics and mechanics meet:
+          building, integrating and validating systems for vehicles and autonomous
+          machines.
+        </p>
+        <p>
+          Today I work as a development engineer in ADAS Hardware-in-the-Loop
+          testing. Along the way I have led electronics for an electric-vehicle
+          startup, designed control for an autonomous race car, and built a
+          cooperative-driving navigation algorithm in ROS2 and C++. I enjoy taking
+          a product from idea to a working, tested system.
+        </p>
+        <ul class="about__facts">
+          <li><strong>Based in</strong> Ingolstadt, Germany</li>
+          <li><strong>Languages</strong> Spanish (native), German (C1), English (B2)</li>
+          <li><strong>Focus</strong> Autonomous systems · ADAS validation · Embedded</li>
+          <li><strong>IEEE</strong> Member since 2016 (#93873860)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <h2 class="section__title">Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card__tag">ADAS · HiL</div>
+          <h3 class="card__title">ADAS Hardware-in-the-Loop Validation</h3>
+          <p class="card__text">
+            Development engineer on a mini-HiL closed-loop test bench for advanced
+            driver-assistance functions (adaptive cruise, hands-free driving) on a
+            premium electric vehicle platform. Test cases designed with Keyword-Driven
+            Testing and the Precondition-Action-Expected pattern, executed both
+            manually and through TPT-driven automation, with rest-bus simulation
+            around real ECUs and closed-loop co-simulation.
+          </p>
+          <ul class="card__stack">
+            <li>CANoe</li><li>TPT</li><li>CarMaker</li><li>Restbus simulation</li><li>KDT</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__tag">Robotics · ROS2</div>
+          <h3 class="card__title">Cooperative-Driving Occupancy Grid (Master's Thesis)</h3>
+          <p class="card__text">
+            Designed and implemented a collision-avoidance strategy for cooperative
+            driving. A custom Nav2 costmap-layer plugin in C++ (pluginlib) marks the
+            shared drivable area of two vehicles, computes time-to-collision regions
+            and keeps the ego vehicle out of zones a cooperating vehicle will occupy.
+            Built with ROS2 Humble, custom V2V messages, geometric algorithms and a
+            full CI/CD pipeline.
+          </p>
+          <ul class="card__stack">
+            <li>ROS2 / Nav2</li><li>C++ / Python</li><li>V2V</li><li>Docker CI/CD</li><li>gtest</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__tag">Autonomous Racing</div>
+          <h3 class="card__title">Indy Autonomous Challenge</h3>
+          <p class="card__text">
+            Member of an international autonomous racing team (Black & Gold,
+            Indiana University). Designed and implemented longitudinal and lateral
+            control (PID, ADRC) for the Dallara AV-21 race car, validated in
+            simulation and in physical field tests at the Indianapolis Motor
+            Speedway. Co-author of a technical paper. Also built a 1:10 model on an
+            NVIDIA Jetson Nano (embedded Linux) with ROS2 to prototype the platform.
+          </p>
+          <ul class="card__stack">
+            <li>ROS2</li><li>MATLAB/Simulink</li><li>Jetson Nano</li><li>Field testing</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__tag">Electric Vehicles · Startup</div>
+          <h3 class="card__title">Smart Internal Mobility — Electronics Lead</h3>
+          <p class="card__text">
+            Led the electronics for a startup building utility electric vehicles for
+            in-company transport of people and cargo (fleet of seven, 7.5–10 kW,
+            700 kg payload). Owned the full electronic system: stable IoT telemetry
+            over MQTT, PCB design, vehicle wiring and resolution of EMC / grounding
+            issues, plus a live dashboard for odometry, speed, GNSS position, battery
+            state-of-charge and acceleration.
+          </p>
+          <ul class="card__stack">
+            <li>IoT / MQTT</li><li>PCB design</li><li>GNSS telemetry</li><li>EMC</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__tag">Reinforcement Learning</div>
+          <h3 class="card__title">AI for Intelligent Traffic Control</h3>
+          <p class="card__text">
+            Team project optimising traffic-light timing to give priority to public
+            buses at a real intersection in Ingolstadt. Built the intersection model
+            in SUMO, connected Python and SUMO through TraCI in a custom Gym
+            environment, and trained several reinforcement-learning agents with
+            stable-baselines3.
+          </p>
+          <ul class="card__stack">
+            <li>SUMO</li><li>Python / TraCI</li><li>Gym</li><li>stable-baselines3</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__tag">Embedded · Bachelor</div>
+          <h3 class="card__title">Electric Go-Kart</h3>
+          <p class="card__text">
+            A personal hands-on project during my bachelor's: an electric go-kart
+            driven by a 24 V DC motor, controlled by a PIC18F4550 microcontroller,
+            with a graphic LCD for vehicle status and an ultrasonic sensor for
+            obstacle detection. Where I first turned classroom theory into a working
+            vehicle.
+          </p>
+          <ul class="card__stack">
+            <li>PIC18F4550</li><li>Embedded C</li><li>Power electronics</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills">
+        <div class="skills__col">
+          <h3>Languages &amp; Frameworks</h3>
+          <p>C++ · Python · MATLAB/Simulink · ROS2 / Nav2 · Qt basics</p>
+        </div>
+        <div class="skills__col">
+          <h3>ADAS &amp; Validation</h3>
+          <p>HiL / SiL · CANoe · TPT · CarMaker · Restbus simulation · KDT · V-Model / IVVQ</p>
+        </div>
+        <div class="skills__col">
+          <h3>Embedded &amp; Electronics</h3>
+          <p>Microcontrollers · PCB design · CAN · IoT / MQTT · GNSS · embedded Linux (Jetson)</p>
+        </div>
+        <div class="skills__col">
+          <h3>Tooling</h3>
+          <p>Git · Docker · CI/CD · pytest · gtest · cppcheck · Claude Code · GitHub Copilot</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__lead">
+        Open to roles in autonomous systems, ADAS development &amp; validation,
+        robotics and embedded software.
+      </p>
+      <div class="contact__links">
+        <a href="https://www.linkedin.com/in/ximena-andrea-quevedo-mart%C3%ADnez-89078a12a/">LinkedIn</a>
+        <!-- TODO: replace with your activated IEEE alias once set up -->
+        <a href="mailto:your.alias@ieee.org">Email</a>
+        <a href="https://github.com/Ximena-Quevedo-Martinez">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ximena Quevedo · Built with HTML, CSS &amp; GitHub Pages</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
